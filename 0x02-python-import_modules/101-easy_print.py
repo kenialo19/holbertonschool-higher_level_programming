@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-repr('#pythoniscool\n')
+repr('#pythoniscool')
