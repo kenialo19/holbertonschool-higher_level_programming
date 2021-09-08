@@ -1,4 +1,4 @@
-# 0x02. Python - import & modules  📎  📎 
+# 0x02. Python - import & modules  🌐  🌐 
 
 ## General ✍  
 * Why Python programming is awesome
