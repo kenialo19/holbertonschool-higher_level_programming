@@ -10,3 +10,4 @@
 1|[0x00-Python - Hello, World](./0x00-hello_world)| Starting in the Python World
 2|[0x01-Python - if/else, loops, functions](./0x01-variables_if_else_while)| If, else, loops, function
 3|[0x02-Python - import & modules](./0x02-functions_nested_loops)| import, modules
+
