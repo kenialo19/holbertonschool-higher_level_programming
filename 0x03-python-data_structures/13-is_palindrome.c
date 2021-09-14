@@ -11,17 +11,18 @@ int is_palindrome(listint_t **head)
 	listint_t *re = *head, *aux = *head, *list = NULL, *ptr = NULL;
 
 	if (*head == NULL)
+	{
+		free_listint(re), free_listint(aux);
+		free_listint(list), free_listint(ptr);
 		return (1);
-
+	}
 	while (re != NULL)
 	{
 		ptr = re->next;
 		re->next = list;
-
 		list = re;
 		re = ptr;
 	}
-
 	while (list != NULL && aux != NULL)
 	{
 		if (list->n == aux->n)
@@ -30,7 +31,17 @@ int is_palindrome(listint_t **head)
 			aux = aux->next;
 		}
 		else
+		{
+			free_listint(re);
+			free_listint(aux);
+			free_listint(list);
+			free_listint(ptr);
 			return (0);
+		}
 	}
+	free_listint(re);
+	free_listint(aux);
+	free_listint(list);
+	free_listint(ptr);
 	return (1);
 }
