@@ -12,8 +12,6 @@ int is_palindrome(listint_t **head)
 
 	if (*head == NULL)
 	{
-		free_listint(re), free_listint(aux);
-		free_listint(list), free_listint(ptr);
 		return (1);
 	}
 	while (re != NULL)
@@ -32,16 +30,12 @@ int is_palindrome(listint_t **head)
 		}
 		else
 		{
-			free_listint(re);
-			free_listint(aux);
-			free_listint(list);
-			free_listint(ptr);
 			return (0);
 		}
 	}
 	free_listint(re);
 	free_listint(aux);
-	free_listint(list);
-	free_listint(ptr);
+	/*free_listint(list);
+	free_listint(ptr);*/
 	return (1);
 }
