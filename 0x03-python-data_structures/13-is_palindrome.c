@@ -35,7 +35,7 @@ int is_palindrome(listint_t **head)
 	}
 	free_listint(re);
 	free_listint(aux);
-	/*free_listint(list);
-	free_listint(ptr);*/
+	/*free_listint(list);*/
+	free_listint(ptr);
 	return (1);
 }
