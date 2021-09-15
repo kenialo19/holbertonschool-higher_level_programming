@@ -11,3 +11,4 @@
 2|[🔄 0x01-Python - if/else, loops, functions](./0x01-variables_if_else_while)| If, else, loops, function
 3|[💽 0x02-Python - import & modules](./0x02-functions_nested_loops)| import, modules
 4|[📑 0x02-Python - Data Structures: Lists, Tuples](./0x02-functions_nested_loops)| Data Structures: Lists, Tuples
+5|[📑 0x02-Python - More Data Structures: Set, Dictionary](./0x02-functions_nested_loops)| More Data Structures: Set, Dictionary
