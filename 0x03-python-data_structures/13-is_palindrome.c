@@ -11,6 +11,7 @@ int is_palindrome(listint_t **head)
 	listint_t *list = NULL, *ptr = NULL, *re = *head;
 	int i = 0, j = 0;
 	int new_list[BUFSIZ];
+
 	if (*head == NULL)
 	{
 		return (1);
@@ -26,10 +27,8 @@ int is_palindrome(listint_t **head)
 	}
 	while (list != NULL)
 	{
-		// printf("[%i] - array[%i]\n", list->n, new_list[j]);
 		if (list->n == new_list[j])
 		{
-			// printf("if - [%i] - array[%i]\n", list->n, new_list[j]);
 			list = list->next;
 			j++;
 		}
