@@ -8,25 +8,30 @@
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *re = *head, *aux = *head, *list = NULL, *ptr = NULL;
-
+	listint_t *list = NULL, *ptr = NULL, *re = *head;
+	int i = 0, j = 0;
+	int new_list[BUFSIZ];
 	if (*head == NULL)
 	{
 		return (1);
 	}
 	while (re != NULL)
 	{
+		new_list[i] = re->n;
 		ptr = re->next;
 		re->next = list;
 		list = re;
 		re = ptr;
+		i++;
 	}
-	while (list != NULL && aux != NULL)
+	while (list != NULL)
 	{
-		if (list->n == aux->n)
+		// printf("[%i] - array[%i]\n", list->n, new_list[j]);
+		if (list->n == new_list[j])
 		{
+			// printf("if - [%i] - array[%i]\n", list->n, new_list[j]);
 			list = list->next;
-			aux = aux->next;
+			j++;
 		}
 		else
 		{
