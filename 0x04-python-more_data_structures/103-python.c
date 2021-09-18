@@ -56,7 +56,7 @@ void print_python_list(PyObject *p)
 	for (i = 0; i < len; i++)
 	{
 		printf("Element %i: %s\n", i, obj->ob_item[i]->ob_type->tp_name);
-		if (obj->ob_item[i]->ob_type->tp_name, "bytes") == 0)
+		if (strcmp(obj->ob_item[i]->ob_type->tp_name, "bytes") == 0)
 			print_python_bytes(obj->ob_item[i]);
 	}
 }
