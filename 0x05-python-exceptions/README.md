@@ -1,6 +1,6 @@
 # 0x05. Python - Exceptions 🔑
 
-<h2>Resources</h2> 📖
+<h2>Resources  📖</h2>
 
 <p><strong>Read or watch</strong>:</p>
 
@@ -13,7 +13,7 @@
 
 <p>At the end of this project, you are expected to be able to <a href="/rltoken/Ur7cRVBIsgU5vXya1q-wtA" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
 
-<h3>General</h3> 👋
+<h3>General 👋</h3> 
 
 <ul>
 <li>Why Python programming is awesome </li>
@@ -26,9 +26,9 @@
 <li>When do we need to implement a clean-up action after an exception</li>
 </ul>
 
-<h2>Requirements</h2> 🔊
+<h2>Requirements 🔊</h2> 
 
-<h3>General</h3> 👋
+<h3>General 👋</h3> 
 
 <ul>
 <li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
