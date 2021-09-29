@@ -8,10 +8,7 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """Initializes Square"""
         self.size = size
-        try:
-            self.position = position
-        except TypeError as error:
-            print(error)
+        self.position = position
 
     @property
     def position(self):
