@@ -4,8 +4,12 @@
 
 class Square:
     def __init__(self, size=0, position=(0, 0)):
-        self.__position = position
         self.__size = size
+
+        try:
+            self.__position = position
+        except TypeError as error:
+            print(error)
 
     @property
     def position(self):
