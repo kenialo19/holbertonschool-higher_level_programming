@@ -3,5 +3,7 @@
 
 
 class Square:
-    def __init__(self, size):  # init allow square class to be used
-        self.__size = size   # asign private instance attribute size
+    """ init allow square class to be used """
+    def __init__(self, size):
+        """ asign private instance attribute size """
+        self.__size = size
