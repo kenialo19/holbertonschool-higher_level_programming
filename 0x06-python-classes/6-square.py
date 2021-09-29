@@ -10,8 +10,8 @@ class Square:
         self.size = size
         try:
             self.position = position
-        except TypeError as err:
-            print(err)
+        except TypeError as error:
+            print(error)
 
     @property
     def position(self):
