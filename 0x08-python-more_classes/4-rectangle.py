@@ -61,10 +61,9 @@ class Rectangle:
             if x < self.__height - 1:
                 new_string += "\n"
         return new_string
-    
+
     def __repr__(self):
         """Returns a String with a representation
         of the state of the object"""
 
         return "Rectangle({}, {})".format(self.__width, self.__height)
-
