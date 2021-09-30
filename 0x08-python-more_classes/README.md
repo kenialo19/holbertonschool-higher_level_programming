@@ -1,6 +1,5 @@
 # 0x08. Python - More Classes and Objects 🎨
 
-      <div class="gap" id="project-description">
   <h2>Resources 🔴</h2>
 
 <p><strong>Read or watch</strong>:</p>
