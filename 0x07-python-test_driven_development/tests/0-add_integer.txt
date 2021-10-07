@@ -99,3 +99,8 @@ Whith more of two numbers:
     Traceback (most recent call last):
 	...
     TypeError: a must be an integer
+
+    >>> add_integer(5, float("nan"))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
