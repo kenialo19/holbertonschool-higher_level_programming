@@ -112,11 +112,5 @@ Whith more of two numbers:
     >>> add_integer(1, 999999999999)
     1000000000000
     
-    >>> add_integer(-1)
-    97
-
-    >>> add_integer(b=4, a=-3)
-    1
-
-    >>> add_integer(3, b=3)
-    6
+    >>> add_integer(6)
+    104
