@@ -1,0 +1,76 @@
+===========================
+0. Integers addition module
+===========================
+
+function that adds 2 integers.
+
+Import module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Uses:
+
+None, none
+    >>> add_integer(None, None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+Int, none
+    >>> add_integer(2, None)
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+None, int:
+    >>> add_integer(None, 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+negative integers
+    >>> add_integer(-2, -10)
+    -12
+
+negative, positive
+    >>> add_integer(-4, 8)
+    4
+
+int, int:
+    >>> add_integer(2, 5)
+    7
+
+float, float:
+    >>> add_integer(3.4, 2.6)
+    5
+
+ Float, integer:
+    >>> add_integer(3.7, 7)
+    10
+
+Integer, Float:
+    >>> add_integer(5, 3.3)
+    8
+
+str, int:
+    >>> add_integer("hello", 5)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+int, str
+    >>> add_integer(5, "hello")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+list, int:
+    >>> add_integer([5, 8, 7], 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+Whith more of two numbers:
+add_integer(80, -2, 8)
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
