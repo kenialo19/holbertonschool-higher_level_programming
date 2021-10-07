@@ -70,7 +70,12 @@ list, int:
     TypeError: a must be an integer
 
 Whith more of two numbers:
-add_integer(80, -2, 8)
+    >>> add_integer(80, -2, 8)
     Traceback (most recent call last):
     ...
     TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+    >>> add_integer(float('NaN'), 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
