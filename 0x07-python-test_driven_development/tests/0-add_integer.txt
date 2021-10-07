@@ -47,6 +47,18 @@ float, float:
     >>> add_integer(3.7, 7)
     10
 
+    >>> add_integer(1000.1, 1000.9)
+    2000
+
+    >>> add_integer(1000.1, -1000.9)
+    0
+
+    >>> add_integer(0.0)
+    98
+
+    >>> add_integer(-98)
+    0
+
 Integer, Float:
     >>> add_integer(5, 3.3)
     8
