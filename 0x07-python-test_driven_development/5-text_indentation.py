@@ -7,6 +7,9 @@ each of these characters
 
 
 def text_indentation(text):
+    """
+    function that prints a text with 2 new lines
+    """
 
     flag = True
     delimiters = ['.', '?', ':']
