@@ -6,6 +6,7 @@ import unittest
 
 max_integer = __import__('6-max_integer').max_integer
 
+
 class testing_max_integer(unittest.TestCase):
     """Class test
     Arguments:
@@ -14,23 +15,23 @@ class testing_max_integer(unittest.TestCase):
     def test_middle(self):
         """test_middle
         """
-        self.assertAlmostEquals(max_integer([1,2,5,4]), 5)
+        self.assertAlmostEquals(max_integer([1, 2, 5, 4]), 5)
 
     def test_end(self):
         """test_middle
         """
-        self.assertAlmostEquals(max_integer([1,2,4,5]), 5)
+        self.assertAlmostEquals(max_integer([1, 2, 4, 5]), 5)
 
     def test_beginning(self):
         """test_middle
         """
-        self.assertAlmostEquals(max_integer([5,2,4,2]), 5)
+        self.assertAlmostEquals(max_integer([5, 2, 4, 2]), 5)
 
     def test_only_negative_numbers(self):
         """test_middle
         """
-        self.assertAlmostEquals(max_integer([-1,-3,-100,-4]), -1)
-    
+        self.assertAlmostEquals(max_integer([-1, -3, -100, -4]), -1)
+
     def test_floats(self):
         """test_middle
         """
@@ -50,7 +51,7 @@ class testing_max_integer(unittest.TestCase):
         """test_middle
         """
         self.assertAlmostEqual(max_integer([]), None)
-    
+
     def test_not_list(self):
 
         wi = [1, 2, "mao", 4]
@@ -67,7 +68,7 @@ class testing_max_integer(unittest.TestCase):
 
         wi = "hello"
         self.assertRaises(TypeError)
-    
+
     def test_none_and_zero(self):
 
         wi = []
