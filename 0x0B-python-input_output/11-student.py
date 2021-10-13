@@ -19,10 +19,9 @@ class Student:
                 if i in self.__dict__:
                     dict[i] = self.__dict__[i]
             return dict
-        
+
         def reload_from_json(self, json):
             """Replaces all attributes of the Student instance"""
 
             for key, value in json.items():
                 self.__dict__[key] = value
-
