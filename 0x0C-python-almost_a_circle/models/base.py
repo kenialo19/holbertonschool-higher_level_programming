@@ -4,6 +4,7 @@
 
 import json
 
+
 class Base:
     """Class that manage id attribute in all future classes
     and to avoid duplicating the same code"""
@@ -25,7 +26,7 @@ class Base:
         if list_dictionaries is None:
             return "[]"
         return json.dumps(list_dictionaries)
-    
+
     @classmethod
     def save_to_file(cls, list_objs):
         """ JSON string to file"""
@@ -34,4 +35,3 @@ class Base:
             list_objs = [i.to_dictionary() for i in list_objs]
         with open(filename, "w") as f:
             f.write(cls.to_json_string(list_objs))
-            
