@@ -18,8 +18,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-    
-    
+
     @property
     def width(self):
         """Getter for width"""
@@ -102,8 +101,7 @@ class Rectangle(Base):
 
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
             self.id, self.__x, self.__y, self.__width, self.__height)
-    
-    
+
     def update(self, *args, **kwargs):
         """Update the class rectangle"""
 
@@ -130,4 +128,3 @@ class Rectangle(Base):
                 self.x = kwargs["x"]
             if "y" in kwargs:
                 self.y = kwargs["y"]
-
