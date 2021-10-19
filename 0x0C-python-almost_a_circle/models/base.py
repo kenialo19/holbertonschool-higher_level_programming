@@ -65,7 +65,8 @@ class Base:
         list_obj = []
         try:
             with open(filename, "r") as f:
-                list_obj = [cls.create(**d) for d in cls.from_json_string(f.read())]
+                list_obj = [cls.create(**d)
+                            for d in cls.from_json_string(f.read())]
             return list_obj
         except FileNotFoundError:
             return []
