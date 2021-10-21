@@ -4,6 +4,7 @@
 
 import json
 import turtle
+from time import sleep
 
 
 class Base:
@@ -91,6 +92,7 @@ class Base:
             t.left(90)
             t.up()
             t.forward(i.width * 2)
+            sleep(0.5)
 
         for j in list_squares:
             t.down()
@@ -104,3 +106,5 @@ class Base:
             t.left(90)
             t.up()
             t.forward(j.width * 2)
+            sleep(0.5)
+
