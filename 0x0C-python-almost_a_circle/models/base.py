@@ -3,6 +3,7 @@
 
 
 import json
+import turtle
 
 
 class Base:
@@ -70,3 +71,36 @@ class Base:
             return list_obj
         except FileNotFoundError:
             return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        '''draw'''
+        turtle.setworldcoordinates(-1, -1, 700, 700)
+        t = turtle.Turtle()
+        turtle.bgcolor("grey")
+        t.color('#33FF4E')
+        for i in list_rectangles:
+            t.down()
+            t.forward(i.width)
+            t.left(90)
+            t.forward(i.height)
+            t.left(90)
+            t.forward(i.width)
+            t.left(90)
+            t.forward(i.height)
+            t.left(90)
+            t.up()
+            t.forward(i.width * 2)
+
+        for j in list_squares:
+            t.down()
+            t.forward(j.width)
+            t.left(90)
+            t.forward(j.height)
+            t.left(90)
+            t.forward(j.width)
+            t.left(90)
+            t.forward(j.height)
+            t.left(90)
+            t.up()
+            t.forward(j.width * 2)
