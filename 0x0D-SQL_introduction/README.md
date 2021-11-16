@@ -1,22 +1,4 @@
  # 0x0D. SQL - Introduction
- <h2>Concepts</h2>
-
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <p>
-        <em>For this project, students are expected to look at this concept:</em>
-      </p>
-
-      <ul>
-          <li>
-            <a href="/concepts/556">Databases</a>
-          </li>
-      </ul>
-    </div>
-  </div>
-
-
-      <div class="well clean" id="project-description">
   <p><img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/272/rtcwz.jpg" alt="" style="" /></p>
 
 <h2>Resources</h2>
