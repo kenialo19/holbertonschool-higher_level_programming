@@ -19,7 +19,8 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    db = session.query(State).order_by(State.id).filter(State.name == id_position).first()
+    db = session.query(State).order_by(State.id)\
+        .filter(State.name == id_position).first()
     if db is None:
         print('Not found')
     else:
