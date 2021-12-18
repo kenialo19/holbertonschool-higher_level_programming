@@ -13,7 +13,8 @@ if __name__ == '__main__':
     cursor = db.cursor()
     argument = argv[4]
     cursor.execute(
-        'SELECT * FROM states WHERE name= %(argument)s ORDER BY states.id ASC', {'argument': argument})
+        'SELECT * FROM states WHERE name= %(argument)s ORDER BY states.id ASC',
+        {'argument': argument})
 
     state = cursor.fetchall()
 
