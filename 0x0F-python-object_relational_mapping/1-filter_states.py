@@ -18,3 +18,6 @@ if __name__ == '__main__':
 
     for state in state:
         print(state)
+
+    cursor.close()
+    db.close()
