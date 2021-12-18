@@ -15,7 +15,8 @@ if __name__ == '__main__':
         'SELECT cities.id, cities.name, states.name\
         FROM cities LEFT JOIN states\
         ON cities.state_id = states.id\
-        WHERE states.name=%(argument)s ORDER BY cities.id ASC', {'argument': argument})
+        WHERE states.name=%(argument)s ORDER BY cities.id ASC',
+        {'argument': argument})
     city = []
     for state in cursor.fetchall():
         city.append(state[1])
