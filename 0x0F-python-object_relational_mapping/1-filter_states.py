@@ -12,10 +12,9 @@ if __name__ == '__main__':
         user=argv[1], password=argv[2], database=argv[3], port=3306)
     cursor = db.cursor()
     cursor.execute(
-        'SELECT * FROM states WHERE name LIKE \'N%\' ORDER BY states.id ASC;')
+        'SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY states.id ASC;')
 
     state = cursor.fetchall()
-
     for state in state:
         print(state)
 
